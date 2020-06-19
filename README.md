@@ -4,7 +4,7 @@
 
 ![test-fail](https://img.shields.io/badge/text-fail-red)
 
-本项目基于[uiautomator]()和[opencv2]()
+本项目基于[uiautomator](https://github.com/xiaocong/uiautomator)和[opencv2](https://opencv.org/)
 
 TODO：
 
