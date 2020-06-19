@@ -2,7 +2,7 @@
 
 ![build-passing](https://img.shields.io/badge/build-passing-green)
 
-![test-fail](https://img.shields.io/badge/text-fail-red)
+![test-fail](https://img.shields.io/badge/test-fail-red)
 
 本项目基于[uiautomator](https://github.com/xiaocong/uiautomator)和[opencv2](https://opencv.org/)
 
