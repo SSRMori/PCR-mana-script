@@ -20,12 +20,14 @@ if __name__ == "__main__":
     # del g
     # os.system(".\\..\\platform-tools\\adb.exe kill-server")
     # time.sleep(10)
+    os.system(".\\..\\platform-tools\\adb.exe kill-server")
     
     for account in accountList[:]:
         g = game()
         g.login(account)
         g.taskbonus()
         g.mop(10)
+        g.reconnect()
         g.Dungeon()
         g.taskbonus()
         g.gift()

@@ -24,12 +24,13 @@ class game(object):
         percent += psutil.cpu_percent()
         percent /= 4
         print("CPU usage is " + str(percent))
-        while percent > 90:
+        while percent > 80:
             print("CPU usage TOO HIGH. waiting")
+            self.reconnect()
             # os.system(".\\..\\platform-tools\\adb.exe kill-server")
             # self.connected = False
             # self.d = None
-            # time.sleep(10)
+            # time.sleep(30)
             # self.__init__()
             time.sleep(10)
             percent = psutil.cpu_percent()
@@ -42,11 +43,20 @@ class game(object):
             percent /= 4
             print("CPU usage is " + str(percent))
         print("Connected")
+    
+    def reconnect(self):
+        print("Reconnecting")
+        os.system(".\\..\\platform-tools\\adb.exe kill-server")
+        self.connected = False
+        self.d = None
+        time.sleep(30)
+        self.__init__()
+        self.d.screenshot("screenshot.png")
 
     def enter(self, name):
         self.cpuMonitor()
         template = templateLoad(name + ".png")
-        photo_name = "[" + time.strftime("%H:%M:%S", time.localtime()) + "]screenshot.png" 
+        photo_name = "screenshot.png"#"[" + time.strftime("%H-%M-%S", time.localtime()) + "]screenshot.png" 
         self.d.screenshot(photo_name)
         src = imLoad(photo_name)
         x, y = match(src, template)
@@ -57,8 +67,8 @@ class game(object):
         self.cpuMonitor()
         time.sleep(2)
         template = templateLoad(name + ".png")
-        photo_name = "[" + time.strftime("%H-%M-%S", time.localtime()) + "]screenshot.png" 
-        print(photo_name)
+        photo_name = "screenshot.png"#"[" + time.strftime("%H-%M-%S", time.localtime()) + "]screenshot.png" 
+        # print(photo_name)
         self.d.screenshot(photo_name)
         src = imLoad(photo_name)
         x, y = match(src, template)
@@ -167,21 +177,21 @@ class game(object):
         print("Finder finished")
 
     def Dungeon(self):
-        # print("Start dungeon")
-        # self.enter("advanture")
-        # print("\tEnter advanture")
-        # self.enter("dungeon")
-        # print("\tEnter dungeon")
-        # self.enter("dungeon1")
-        # print("\tEnter dungeon 1")
-        # self.click("blueOK")
-        # time.sleep(5)
+        print("Start dungeon")
+        self.enter("advanture")
+        print("\tEnter advanture")
+        self.enter("dungeon")
+        print("\tEnter dungeon")
+        self.enter("dungeon1")
+        print("\tEnter dungeon 1")
+        self.click("blueOK")
+        time.sleep(5)
         self.click("dungeonLevel1")
         print("\tSelect dungeon level 1")
         self.click("challenge")
         
         time.sleep(5)
-        self.clickLoc(150, 220)
+        # self.clickLoc(150, 220)
         time.sleep(2)
         self.clickLoc(635, 120)
         print("\tSelect support")
@@ -192,13 +202,15 @@ class game(object):
         print("\tStartBattle")
         self.click("blueOK")
 
+        time.sleep(20)
 
-        self.click("battleMenu")
+        # self.click("battleMenu")
+        self.clickLoc(1206, 33)
         self.click("battleWhiteGiveup")
         self.click("battleBlueGiveup")
         print("\tGive up battle")
-        time.sleep(30)
-        self.click("backToDungeon")
+        # time.sleep(30)
+        # self.click("backToDungeon")
         print("\tBack to dungeon")
         time.sleep(2)
         self.click("exitDungeon")
