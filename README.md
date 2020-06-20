@@ -1,8 +1,6 @@
 # 公主连接 Princess Connect Re:Dive 自建农场脚本
 
-![build-pass](https://img.shields.io/badge/build-pass-green)
-
-![test-fail](https://img.shields.io/badge/test-pass-green)
+![build-pass](https://img.shields.io/badge/build-pass-green) ![test-fail](https://img.shields.io/badge/test-pass-green)
 
 本项目基于[uiautomator](https://github.com/xiaocong/uiautomator)和[opencv2](https://opencv.org/)
 
