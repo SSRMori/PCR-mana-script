@@ -82,4 +82,4 @@ python main.py
 
 **请开发者喝杯奶茶吧！~**
 
-![支付宝收款码](https://wx1.sbimg.cn/2020/06/21/075f4e5983f6056d2f3a75345701aac9.png)
+![支付宝收款码](https://raw.githubusercontent.com/SSRMori/photo/master/img/支付宝收款码.png)
