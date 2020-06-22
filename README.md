@@ -82,4 +82,6 @@ python main.py
 
 **请开发者喝杯奶茶吧！~**
 
-![支付宝收款码](https://raw.githubusercontent.com/SSRMori/photo/master/img/支付宝收款码.png)
+![微信收款码](https://raw.githubusercontent.com/SSRMori/photo/master/img/WechatQR.jpg)
+
+![支付宝收款码](https://raw.githubusercontent.com/SSRMori/photo/master/img/AlipayQR.jpg)
