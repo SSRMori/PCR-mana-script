@@ -82,10 +82,12 @@ python main.py
 
 **请开发者喝杯奶茶吧！~**
 
-<!-- https://raw.githubusercontent.com/SSRMori/photo/master/img/WechatQR.jpg -->
+![Wechat](https://raw.githubusercontent.com/SSRMori/photo/master/img/WechatQR.jpg)
 
-<!-- https://raw.githubusercontent.com/SSRMori/photo/master/img/AlipayQR.jpg -->
+![Alipay](https://raw.github.com/SSRMori/photo/master/img/AlipayQR.jpg)
+
+![Wechat](https://wx2.sbimg.cn/2020/06/24/WechatQR.jpg)
 
 ![Alipay](https://wx2.sbimg.cn/2020/06/24/AlipayQR.jpg)
 
-![Wechat](https://wx2.sbimg.cn/2020/06/24/WechatQR.jpg)
+
