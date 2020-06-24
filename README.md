@@ -18,7 +18,7 @@
 
 使用前请打开**支持adb的安卓模拟器**（推荐使用[雷电模拟器](https://www.ldmnq.com/)），并**开启Bilibili版本**公主连接游戏，保持在标题界面，即如下图所示的界面：
 
-![titlePage](./image/titlePage.png)
+![titlePage](https://wx1.sbimg.cn/2020/06/24/titlePage.png)
 
 在当前目录（包含`src`等文件夹）新建`account`文件夹，在`account`文件夹中新建`account.json`文件，并在其中按照如下格式填写农场账号有关信息：
 
@@ -82,6 +82,10 @@ python main.py
 
 **请开发者喝杯奶茶吧！~**
 
-<img style="height: 300px" src="https://raw.githubusercontent.com/SSRMori/photo/master/img/WechatQR.jpg">
+<!-- https://raw.githubusercontent.com/SSRMori/photo/master/img/WechatQR.jpg -->
 
-<img style="height: 300px" src="https://raw.githubusercontent.com/SSRMori/photo/master/img/AlipayQR.jpg">
+<!-- https://raw.githubusercontent.com/SSRMori/photo/master/img/AlipayQR.jpg -->
+
+![Alipay](https://wx2.sbimg.cn/2020/06/24/AlipayQR.jpg)
+
+![Wechat](https://wx2.sbimg.cn/2020/06/24/WechatQR.jpg)

@@ -12,7 +12,7 @@ os.environ['ANDROID_HOME'] = android_home
 if __name__ == "__main__":
     accountList = getAccounts()
     os.system(".\\..\\platform-tools\\adb.exe kill-server")
-    for account in accountList[:7]:
+    for account in accountList[:]:
         g = game()
         g.login(account)
         g.taskbonus()
